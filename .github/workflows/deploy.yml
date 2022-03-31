@@ -1,0 +1,14 @@
+name: Build and deploy Bookdee docs.
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Build and Deploy
+      uses: jenkey2011/vuepress-deploy@v2.0.0
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BUILD_SCRIPT: yarn && yarn build
+        BUILD_DIR: docs/.vuepress/dist

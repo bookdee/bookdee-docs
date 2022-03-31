@@ -1,0 +1,14 @@
+{
+  "name": "bookdee-docs",
+  "version": "0.0.1",
+  "description": "Build an online book store application with Microfrontend concept.",
+  "repository": "/bookdee-docs",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
