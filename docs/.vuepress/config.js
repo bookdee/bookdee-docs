@@ -22,7 +22,7 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
 
-  base: `/pages/${GITHUB_REPOSITORY}`,
+  base: `/${GITHUB_REPOSITORY}/`,
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
